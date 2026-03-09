@@ -50,6 +50,18 @@ function playGame() {
 }
 
 playGame();
+    console.log("----- FINAL RESULTS -----");
+    console.log(`Player: ${playerSelection} | Computer: ${computerSelection}`);
+
+    if (playerSelection > computerSelection) {
+        console.log("🎉 You are the overall winner!");
+    } else if (computerSelection > playerSelection) {
+        console.log("💻 The computer wins the game!");
+    } else {
+        console.log("It's an overall tie!");
+    }
+
+
 
 
 
