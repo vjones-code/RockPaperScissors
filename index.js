@@ -4,6 +4,7 @@ const options = ["rock", "paper", "scissors"];
 
 function getComputerChoice(){
 const choice = options[Math.floor(Math.random() * options.length)];
+
 return choice;
 }
 function checkWinner(playerSelection, computerSelection){
@@ -35,6 +36,24 @@ else {
 }
 const playerSelection = "rock"
 const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        console.log(`\nRound ${i + 1}`);
+
+        const playerSelection = "rock"; // or any default
+        const computerSelection = getComputerChoice();
+
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+playGame();
+
+
+
+
 
 
 
